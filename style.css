@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main-word {
+    position: absolute;
+    color: #ff69b4;
+    font-size: 2.8vw;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    text-shadow: 0 0 22px #ff69b4, 0 0 3px #fff;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    transition: filter 0.2s, left 0.4s, top 0.4s;
+    will-change: left, top;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    #main-word {
+        font-size: 6vw;
+    }
+}
+
+#matrix {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: 1;
+    background: transparent;
+}
